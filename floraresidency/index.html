@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora Residency</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <div class="container">
+        <div class="logo">
+    <div class="logo-main">
+        Flo<span class="leaf">🌷</span>ra
+    </div>
+
+    <div class="logo-sub">
+        Residency
+    </div>
+
+    <div class="logo-small">
+        HOTEL&RESTAURANT
+    </div>
+</div>
+    
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+
+        
+        <a id="call" href="#rooms" target="_blank" class="btn" >
+   Book Now
+</a>
+    </div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <span>Comfortable Rooms At Affordable Prices</span>
+
+<h1>Book Your Perfect Stay In Kathmandu</h1>
+
+<p>Enjoy clean rooms, delicious food, free WiFi and friendly hospitality at budget-friendly rates.</p>
+
+        <div class="hero-buttons">
+            <a href="#rooms" class="btn">Explore Rooms</a>
+            <a href="#" class="btn-outline">Watch Video</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- BOOKING -->
+
+<section class="booking" id="book">
+
+    <div class="booking-box">
+
+        <div class="input-box">
+            <label>Check In</label>
+            <input type="date" id="checkin">
+        </div>
+
+        <div class="input-box">
+            <label>Check Out</label>
+            <input type="date" id="checkout">
+        </div>
+
+
+        <div class="input-box">
+            <label>Guests</label>
+            <select id="guests">
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5 Guests</option>
+            </select>
+        </div>
+
+        <button onclick="sendWhatsApp()" class="availability-btn">
+    Check Availability
+</button>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about">
+
+    <div class="about-image">
+        <img src="flora.jpg" alt="">
+    </div>
+
+    <div class="about-content">
+
+        <span>About Us</span>
+
+        <h2>
+            Best Luxury Hotel
+            In Your City
+        </h2>
+
+        <p>
+            Discover comfort and elegance with modern rooms,
+            fine dining, swimming pool and exceptional hospitality.
+        </p>
+
+        <a href="#" class="btn">
+            Learn More
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ROOMS -->
+
+<section class="rooms" id="rooms">
+
+    <div class="section-title">
+        <span>Our Rooms</span>
+        <h2>Choose Your Room</h2>
+    </div>
+
+    <div class="room-container">
+
+        
+        <div class="room-card">
+
+    <img src="room1.jpg" alt="Room">
+
+    <div class="room-content">
+
+        <h3>Normal Room</h3>
+
+        <div class="room-info">
+
+            <span><i class="fa-solid fa-users"></i> 2 Guests</span>
+
+            <span><i class="fa-solid fa-bed"></i> 2 Bed</span>
+
+            <span><i class="fa-solid fa-expand"></i> 24 m²</span>
+
+        </div>
+
+        <h4>NPR 800 <small>/ night</small></h4>
+
+        <a href="https://wa.me/9779846880753" class="room-btn">
+            BOOK NOW
+        </a>
+
+    </div>
+
+</div>
+
+        <div class="room-card">
+
+    <img src="room.jpg" alt="Room">
+
+    <div class="room-content">
+
+        <h3>comfort Room</h3>
+
+        <div class="room-info">
+
+            <span><i class="fa-solid fa-users"></i> 2 Guests</span>
+
+            <span><i class="fa-solid fa-bed"></i> 1 Bed</span>
+
+            <span><i class="fa-solid fa-expand"></i> 24 m²</span>
+
+        </div>
+
+        <h4>NPR 1,500 <small>/ night</small></h4>
+
+        <a href="#call" class="room-btn">
+            BOOK NOW
+        </a>
+
+    </div>
+
+</div>
+
+        <div class="room-card">
+
+    <img src="room3.jpg" alt="Room">
+
+    <div class="room-content">
+
+        <h3>family Room</h3>
+
+        <div class="room-info">
+
+            <span><i class="fa-solid fa-users"></i> 4 Guests</span>
+
+            <span><i class="fa-solid fa-bed"></i> 2 Bed</span>
+
+            <span><i class="fa-solid fa-expand"></i> 30 m²</span>
+
+        </div>
+
+        <h4>NPR 2,000 <small>/ night</small></h4>
+
+        <a href="#call" class="room-btn">
+            BOOK NOW
+        </a>
+
+    </div>
+
+</div>
+
+    </div>
+
+</section>
+
+<!-- FACILITIES -->
+
+<section class="facilities" id="facilities">
+
+    <div class="section-title">
+        <span>Facilities</span>
+        <h2>Hotel Services</h2>
+    </div>
+
+    <div class="facility-grid">
+
+        <div class="facility">
+            <i class="fa-solid fa-wifi"></i>
+            <h3>Free WiFi</h3>
+        </div>
+
+        <div class="facility">
+    <i class="fa-solid fa-bell-concierge"></i>
+    <h3>Quick Room Service</h3>
+</div>
+
+        <div class="facility">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Restaurant</h3>
+        </div>
+
+        
+
+        <div class="facility">
+            <i class="fa-solid fa-square-parking"></i>
+            <h3>Parking</h3>
+        </div>
+
+        <div class="facility">
+           <i class="fa-solid fa-clock"></i>
+           <h3>24/7 Service</h3>
+        </div>
+        <div class="facility">
+    <i class="fa-solid fa-tv"></i>
+    <h3>TV In Every Room</h3>
+</div>
+
+    </div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+    <div class="section-title">
+        <span>Gallery</span>
+        <h2>Our Hotel Photos</h2>
+    </div>
+
+    <div class="gallery-grid">
+
+        <img src="get.jpg">
+        <img src="room.jpg">
+        <img src="room1.jpg">
+        <img src="room3.jpg">
+        <img src="flora.jpg">
+        <img src="room.jpg">
+
+    </div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="testimonials">
+
+    <div class="section-title">
+        <span>Testimonials</span>
+        <h2>Guest Reviews</h2>
+    </div>
+
+    <div class="review-container">
+
+        <div class="review">
+            <p>
+                Excellent service and amazing experience.
+            </p>
+            <h4>Showrnim Shahi</h4>
+        </div>
+
+        <div class="review">
+            <p>
+                Beautiful rooms and friendly staff.
+            </p>
+            <h4>Surendra Shahi</h4>
+        </div>
+
+        <div class="review">
+            <p>
+                One of the best hotels I have visited.
+            </p>
+            <h4>Arun Shahi</h4>
+        </div>
+
+    </div>
+
+</section>
+<section class="contact" >
+        <form action="https://formsubmit.co/arunshahi2000@gmail.com" method="POST">
+            <input type="text" placeholder="Your Name">
+            <input type="Address" placeholder="Address">
+           
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button>Send Message</button>
+        </form>
+
+    
+
+</section>
+
+<!-- FOOTER -->
+
+ <footer class="footer">
+
+<div class="footer-container">
+
+    <!-- Logo & About -->
+    <div class="container">
+        <div class="logo">
+    <div class="logo-main">
+        Flo<span class="leaf">🌷</span>ra
+    </div>
+
+    <div class="logo-sub">
+        Residency
+    </div>
+
+    <div class="logo-small">
+        HOTEL&RESTAURANT
+    </div>
+</div>
+        <p>
+            Flora Residency offers comfortable accommodation,
+            quality service and a pleasant stay in Kathmandu.
+        </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Contact Info -->
+     <section id="contact">
+    <div class="footer-col">
+        <h3>Contact Info</h3>
+
+        <p>📍 Sundhara, Kathmandu</p>
+        <p>📞 +977 9846880753</p>
+        <p>📞 +977 9813379775</p>
+        <p>✉️ floraresidency@gmail.com</p>
+    </div>
+     </section>
+    <!-- Location -->
+    <div class="footer-col">
+        <h3>Location on Map</h3>
+
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28260.470642732653!2d85.27563482522964!3d27.700027136910904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19d9242b0c9f%3A0x7af02919ec4d31eb!2sFlora%20Residency!5e0!3m2!1sen!2snp!4v1781518720894!5m2!1sen!2snp"
+        width="100%"
+        height="180"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+        </iframe>
+
+    </div>
+
+</div>
+
+<div class="footer-bottom">
+    <div class="social">
+
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+
+    </div>
+    <p>© 2026 Flora Residency. All Rights Reserved.</p>
+</div>
+
+
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
