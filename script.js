@@ -386,11 +386,8 @@ Number of Guests: ${guests}
 Please let me know room availability and price.
 
 Thank you.`;
+   const whatsappUrl =
+`https://wa.me/9779846880753?text=${encodeURIComponent(message)}`;
 
-    let phone = "9779846880753"; // आफ्नो WhatsApp नम्बर राख
-
-    let url =
-`https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-
-    window.open(url, "_blank");
+window.location.href = whatsappUrl;
 }
